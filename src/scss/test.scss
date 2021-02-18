@@ -1,0 +1,7 @@
+h1{
+  color:red;
+  @media screen AND (min-width:768px) {
+    color:blue; 
+  }
+}
+
