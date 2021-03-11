@@ -1,5 +1,151 @@
-h1 {
-  color: red; }
-  @media screen and (min-width: 768px) {
-    h1 {
-      color: blue; } }
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+h3 {
+  color: black; }
+
+.logo {
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem lightgrey; }
+  .logo__header {
+    font-family: Shrikhand;
+    display: flex;
+    justify-content: center;
+    margin: 0; }
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 1.25rem 1rem;
+  font-size: 1.3rem;
+  color: black; }
+  .search__champ {
+    background-color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 50%; }
+
+.reservation {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 3rem; }
+  .reservation__description {
+    padding-bottom: 1rem; }
+  .reservation__btn {
+    border-radius: 100px;
+    border: none;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px lightgrey;
+    cursor: pointer;
+    background: linear-gradient(#ff79da, #9356DC); }
+
+img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0; }
+
+article {
+  box-shadow: 0px 0px 10px lightgrey;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 90%;
+  cursor: pointer; }
+
+.fonctionnement {
+  padding-top: 1rem;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  font-weight: bold; }
+  .fonctionnement__icon {
+    color: #a3a3a3;
+    margin-right: 1.5rem; }
+  .fonctionnement__site {
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px lightgrey;
+    padding: 1.4rem;
+    margin: 1rem 0 1rem 0.75rem;
+    display: flex;
+    align-items: center; }
+    .fonctionnement__site::before {
+      content: "1";
+      color: white;
+      display: flex;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #9356DC;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      margin-left: -2.5rem;
+      margin-right: 1rem; }
+
+.restaurants {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding-bottom: 2rem; }
+  .restaurants__title {
+    width: 90%;
+    margin-top: 2rem; }
+  .restaurants__name {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0; }
+  .restaurants__cartes {
+    text-decoration: none; }
+  .restaurants__adresse {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -10px;
+    width: 100%; }
+  .restaurants__icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px; }
+
+.footer {
+  background-color: #353535;
+  margin-top: 2rem;
+  padding-bottom: 2rem; }
+  .footer__logo {
+    font-family: Shrikhand;
+    color: white;
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.3rem; }
+  .footer__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 1.5rem; }
+  .footer__detail {
+    margin: 0.5rem; }
+  .footer__icon {
+    color: white; }
+  .footer__lien {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0.5rem; }
