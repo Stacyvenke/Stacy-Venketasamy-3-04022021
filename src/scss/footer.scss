@@ -1,0 +1,33 @@
+.footer {
+    background-color: #353535;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__logo {
+        font-family: Shrikhand;
+        color: white;
+        margin-left: 1.5rem;
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-left: 1.5rem;
+    }
+    
+    &__detail {
+        margin: 0.5rem;
+    }
+
+    &__icon {
+    color: white;
+    }
+
+    &__lien {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 0.5rem;
+    }
+}
