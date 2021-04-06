@@ -86,47 +86,50 @@
 .onglet {
     width: 90%;
     border-radius: 1rem;
-    padding: 1rem;
     display: grid;
     grid-template-areas: 
-        "titre prix ."
-        "detail prix check";
+        "titre prix"
+        "detail prix";
     cursor: pointer;
     animation: onglet 0.8s;
-    grid-auto-columns: 15.9rem 2rem 2rem;
+    grid-auto-columns: auto 2.5rem;
 
     &__title {
-        margin: 0;
+        margin: 0.5rem 0 0 0;
         grid-area: titre;
     }
 
     &__detail {
-        margin: 0;
+        margin: 0 0 .5rem 0;
         grid-area: detail;
     }
 
     &__price {
-        grid-area: prix;
         align-items: flex-end;
         justify-content: flex-end;
         display: flex;
         font-weight: bold;
+        margin-right: 1rem;
+        margin-bottom: .5rem;
     }
 
     &__checkspace {
-        grid-area: check;
-        width: 3rem;
-        height: 1.5rem;
+        grid-area: prix;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-tertiary;
+        justify-content: flex-end;        
+        height: 100%;
+        width: 100%;
     }
 
     &__check {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 0;
+        overflow: hidden;
+        transition: width 1s;
+        border-radius: 0 1rem 1rem 0;
+        background-color: $color-tertiary;
     }
 
     &__icon {
@@ -177,6 +180,22 @@
     100% {
         transform: scale(1);
     }
+}
+
+.onglet:hover .onglet__check {
+    width: 3rem;
+}
+
+.article.onglet:hover {
+    grid-auto-columns: auto 6rem;
+}
+
+.onglet__title, .onglet__detail {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 0.5rem;
 }
 
 .entrees {
