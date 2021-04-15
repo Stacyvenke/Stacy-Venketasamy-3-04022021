@@ -396,7 +396,7 @@ article {
   width: 99%;
   border-radius: 1rem;
   display: grid;
-  grid-template-areas: "titre prix" "detail prix";
+  grid-template-areas: "titre prix" "detail prix";
   cursor: pointer;
   opacity: 0;
   animation: onglet 2s forwards;
@@ -518,7 +518,7 @@ article {
 @media screen and (min-width: 1024px) {
   .cartes {
     display: grid;
-    grid-template-areas: "entrees plats desserts" ". bouton ."; }
+    grid-template-areas: "entrees plats desserts" ". bouton ."; }
   .entrees__title {
     grid-area: entrees; }
   .plats__title {
