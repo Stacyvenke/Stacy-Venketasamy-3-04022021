@@ -25,6 +25,10 @@ article {
   width: 90%;
   cursor: pointer; }
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto; }
+
 /* LOADING */
 .loading {
   display: flex;
@@ -143,6 +147,8 @@ article {
       content: "2"; }
     .fonctionnement__site:nth-of-type(3)::before {
       content: "3"; }
+    .fonctionnement__site :hover {
+      background-color: #f5edff; }
 
 /* SECTION RESTAURANTS */
 .restaurants {
@@ -160,8 +166,10 @@ article {
     background-color: #99E2D0;
     color: #1b6150;
     padding: 0.5rem;
-    right: 2rem;
-    margin-top: 0.5rem; }
+    right: 1rem;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+    margin-right: 20px; }
   .restaurants__name {
     width: 100%; }
   .restaurants__cartes {
