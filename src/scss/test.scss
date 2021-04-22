@@ -265,14 +265,11 @@ article {
 
     &__icon:hover {
         font-weight: bold;
-        background: linear-gradient($color-primary, $color-secondary);
         background-size: 600% 600%;
-
-        -webkit-animation: AnimationName 3s linear;
-        -moz-animation: AnimationName 3s linear;
-        animation: AnimationName 3s linear;
+        background: linear-gradient(#FF79DA,#9356DC);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: AnimationName 3s linear;
     }
 
     @-webkit-keyframes AnimationName {
@@ -459,12 +456,13 @@ article {
     }
 
     .fonctionnement {
+        margin-left: 6rem;
 
         &__site {
             display: inline-flex;
             justify-content: space-between;
             margin-right: 4rem;
-            padding-right: 7rem;
+            padding-right: 6rem;
         }
     }
 
@@ -473,6 +471,11 @@ article {
     }
 
     .restaurants {
+        padding: 0 4.5rem 0 4rem;
+        
+        &__title {
+            margin-left: 0;
+        }
 
         &__new {
             margin-left: 34.5rem;

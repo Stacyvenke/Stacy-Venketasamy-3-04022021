@@ -191,13 +191,11 @@ article {
     font-size: 30px; }
   .restaurants__icon:hover {
     font-weight: bold;
-    background: linear-gradient(#9356DC, #FF79DA);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 3s linear;
-    -moz-animation: AnimationName 3s linear;
-    animation: AnimationName 3s linear;
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    animation: AnimationName 3s linear; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -292,15 +290,21 @@ article {
 @media screen and (min-width: 1440px) {
   .search__champ {
     width: 11%; }
-  .fonctionnement__site {
-    display: inline-flex;
-    justify-content: space-between;
-    margin-right: 4rem;
-    padding-right: 7rem; }
+  .fonctionnement {
+    margin-left: 6rem; }
+    .fonctionnement__site {
+      display: inline-flex;
+      justify-content: space-between;
+      margin-right: 4rem;
+      padding-right: 6rem; }
   article {
     width: 45%; }
-  .restaurants__new {
-    margin-left: 34.5rem; } }
+  .restaurants {
+    padding: 0 4.5rem 0 4rem; }
+    .restaurants__title {
+      margin-left: 0; }
+    .restaurants__new {
+      margin-left: 34.5rem; } }
 
 .footer {
   background-color: #353535;
@@ -368,13 +372,11 @@ article {
     cursor: pointer; }
   .menu__icon:hover {
     font-weight: bold;
-    background: linear-gradient(#9356DC, #FF79DA);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 3s linear;
-    -moz-animation: AnimationName 3s linear;
-    animation: AnimationName 3s linear;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    animation: AnimationName 3s linear; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -426,15 +428,14 @@ article {
     grid-area: prix;
     display: flex;
     justify-content: flex-end;
-    height: 100%;
+    height: 4rem;
     width: 100%; }
   .onglet__check {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 0;
     overflow: hidden;
-    transition: width 1s;
+    transition-duration: 1s;
     border-radius: 0 1rem 1rem 0;
     background-color: #99E2D0; }
   .onglet__icon {
@@ -466,7 +467,8 @@ article {
   .onglet:hover {
     grid-auto-columns: auto 6rem; }
     .onglet:hover .onglet__check {
-      width: 3rem; }
+      width: 0;
+      padding: 2rem; }
 
 @keyframes onglet {
   0% {
