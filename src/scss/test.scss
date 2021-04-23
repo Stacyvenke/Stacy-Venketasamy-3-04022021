@@ -262,35 +262,25 @@ article {
         display: flex;
         font-size: 30px;
     }
+}
 
-    &__icon:hover {
+.restaurants__icon:hover {
         font-weight: bold;
-        background-size: 600% 600%;
-        background: -webkit-linear-gradient(#FF79DA,#9356DC);
+        background: -webkit-linear-gradient(#FF79DA 10%,#9356DC 95%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: AnimationName 3s linear;
-        transition-duration: 1s;
-    }
-
-    @-webkit-keyframes AnimationName {
-        0%{background-position:91% 0%}
-        50%{background-position:10% 100%}
-        100%{background-position:91% 0%}
-    }
-
-    @-moz-keyframes AnimationName {
-        0%{background-position:91% 0%}
-        50%{background-position:10% 100%}
-        100%{background-position:91% 0%}
-    }
-
-    @keyframes AnimationName {
-        0%{background-position:91% 0%}
-        50%{background-position:10% 100%}
-        100%{background-position:91% 0%}
-    }
+        background-position-y: 5.5rem;
+        animation: remplissage 3s forwards;
 }
+
+    @keyframes remplissage {
+        from {
+            background-position-y: 7.5rem;
+        }
+        to {
+            background-position-y: 5.5rem;
+        }
+    }
 
 .restaurants__name {
     display: grid;
