@@ -192,10 +192,11 @@ article {
   .restaurants__icon:hover {
     font-weight: bold;
     background-size: 600% 600%;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: AnimationName 3s linear; }
+    animation: AnimationName 3s linear;
+    transition-duration: 1s; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -488,6 +489,9 @@ article {
   text-overflow: ellipsis;
   white-space: nowrap;
   padding-left: 0.5rem; }
+
+.onglet__detail {
+  width: 85%; }
 
 .entrees__title {
   text-transform: uppercase;
